@@ -183,6 +183,17 @@ testing = ["argcomplete", "hypothesis (>=3.56)", "mock", "nose", "requests", "xm
 
 [[package]]
 category = "dev"
+description = "Simple pytest fixtures for Docker and docker-compose based tests"
+name = "pytest-docker"
+optional = false
+python-versions = ">=3.5"
+version = "0.7.2"
+
+[package.dependencies]
+attrs = ">=19,<20"
+
+[[package]]
+category = "dev"
 description = "Python 2 and 3 compatibility utilities"
 name = "six"
 optional = false
@@ -223,7 +234,7 @@ docs = ["sphinx", "jaraco.packaging (>=3.2)", "rst.linker (>=1.9)"]
 testing = ["jaraco.itertools", "func-timeout"]
 
 [metadata]
-content-hash = "b5784bd0be1c014fc0750fc995192aa55a9f1a0af4cd3130ebacd417f5e3492d"
+content-hash = "4b6d0f99da895fd6800b63e2e1837ee45f3691a5826411aced30233ef9279d67"
 python-versions = "^3.7"
 
 [metadata.files]
@@ -317,6 +328,10 @@ pyparsing = [
 pytest = [
     {file = "pytest-5.4.1-py3-none-any.whl", hash = "sha256:0e5b30f5cb04e887b91b1ee519fa3d89049595f428c1db76e73bd7f17b09b172"},
     {file = "pytest-5.4.1.tar.gz", hash = "sha256:84dde37075b8805f3d1f392cc47e38a0e59518fb46a431cfdaf7cf1ce805f970"},
+]
+pytest-docker = [
+    {file = "pytest-docker-0.7.2.tar.gz", hash = "sha256:ca418c3681437a165320ea7299ede57b695a1eeceaf6149438081a139992cc26"},
+    {file = "pytest_docker-0.7.2-py3-none-any.whl", hash = "sha256:99b3e36c8a69e6f7ac3011d3193342043bb44c995633d9ab1f5abeedb1945e6a"},
 ]
 six = [
     {file = "six-1.14.0-py2.py3-none-any.whl", hash = "sha256:8f3cd2e254d8f793e7f3d6d9df77b92252b52637291d0f0da013c76ea2724b6c"},
