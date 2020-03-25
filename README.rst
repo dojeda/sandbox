@@ -2,6 +2,8 @@
 Sandbox
 =======
 
+![unit tests](https://github.com/dojeda/sandbox/workflows/unit%20tests/badge.svg)
+
 Just an open-source repository to test github workflows.
 
 Nothing to see here, move along.
