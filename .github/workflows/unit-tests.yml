@@ -7,15 +7,24 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v1
-      - name: Install Quetzal
-        uses: abatilo/actions-poetry@v1.5.0
-        with:
-          python_version: 3.7.7
-          poetry_version: 1.0.5
-          args: install
+      - name: Test 1
+        run: |
+          pwd
+          ls -latrh .
+          touch myfile.txt
+      # - name: Install Quetzal
+      #   uses: abatilo/actions-poetry@v1.5.0
+      #   with:
+      #     python_version: 3.7.7
+      #     poetry_version: 1.0.5
+      #     args: install
       - name: Test with pytest
         uses: abatilo/actions-poetry@v1.5.0
         with:
           python_version: 3.7.7
           poetry_version: 1.0.5
           args: run python -m pytest -o log_cli=true -o log_cli_level=DEBUG
+      - name: Test 2
+        run: |
+          pwd
+          ls -latrh .
