@@ -5,9 +5,6 @@ jobs:
     name: pytest
     runs-on: ubuntu-latest
     steps:
-      - name: Install Docker
-        run: |
-          apt install docker.io
       - name: Checkout
         uses: actions/checkout@v1
       - name: Install Quetzal
@@ -16,3 +13,6 @@ jobs:
           python_version: 3.7.5
           poetry_version: 1.0.5
           args: install
+      - name: Test with pytest
+        run: |
+          pytest -o log_cli=true -o log_cli_level=DEBUG
