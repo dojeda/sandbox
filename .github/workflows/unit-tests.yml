@@ -18,5 +18,4 @@ jobs:
         with:
           python_version: 3.7.7
           poetry_version: 1.0.5
-          args: install
-        args: run python -m pytest -o log_cli=true -o log_cli_level=DEBUG
+          args: run python -m pytest -o log_cli=true -o log_cli_level=DEBUG
